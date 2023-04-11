@@ -42,8 +42,6 @@ fetch(proxyUrl + apiUrlDynamic)
     .then(response => response.json())
     .then(data => {
 
-        console.log(data)
-
         //Llamado del nombre del usuario
         const name=data.person.name
         nameId.innerHTML = name;
@@ -54,22 +52,16 @@ fetch(proxyUrl + apiUrlDynamic)
 
         // const skills = data.strengths.map(strength => strength.name);
         const skills = data.strengths.map(strength => ({ name: strength.name, proficiency: strength.proficiency }));
-        console.log(skills[1])
-
         //Funcion de recorrido para obtener el nivel de habilidad\
         skills.forEach(skills =>{
             if(skills.proficiency=="master"){
                 masterSkills.push(skills.name)
-                console.log(masterSkills)
             } else if(skills.proficiency=="proficient"){
                 proficientSkills.push(skills.name)
-                console.log(proficientSkills)
             } else if(skills.proficiency=="novice"){
                 noviceSkills.push(skills.name)
-                console.log(noviceSkills)
             } else{
                 interestedSkills.push(skills.name)
-                console.log(interestedSkills)
             }
         });
 
