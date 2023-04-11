@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Torre</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="source/logo.png" class="logo">
+            <h1 class="logo-name">
+                <span class="logo-torre">torre</span><span class="logo-ai">.co</span>
+            </h1>
+        </div>    
+    </header>
+    <main>
+        <div class="container">
+            <form>
+                <fieldset>
+                    <div class="input-group">
+                        <input type="text" name="username" id="username-input" placeholder="Search" autocomplete="off">
+                        <button type="submit"><img src="source/search.png" alt=""></button>
+                    </div>
+                </fieldset>
+            </form>
+            <article>
+                <div>
+                    <img id="profilePic" class="profile">
+                </div>
+                <h3 class="nombre" id="nameId"></h3>
+                <h3>Skills and Interests:</h3>
+                <fieldset class="card">
+                    <h3 class="skill-level">Master</h3>
+                    <div id="resMaster">
+                        <fieldset class="skill">
+                            <ul id="resMaster"></ul>
+                        </fieldset>
+                    </div>
+                    <h3 class="skill-level">Proficient</h3>
+                    <div id="resProficient">
+                        <fieldset class="skill">
+                            <ul id="resProficient"></ul>
+                        </fieldset>
+                    </div>
+                    <h3 class="skill-level">Novice</h3>
+                    <div id="resNovice">
+                        <fieldset class="skill">
+                            <ul id="resNovice"></ul>
+                        </fieldset>
+                    </div>
+                    <h3 class="skill-level">No experience, but interested</h3>
+                    <div id="resInterest">
+                        <fieldset class="skill">
+                            <ul id="resInterest"></ul>
+                        </fieldset>
+                    </div>
+                    <!-- <ul id="results"></ul> -->
+                </fieldset>
+
+            </article>
+        </div>
+    </main>
+    <!-- <div id="results"></div> -->
+    <script src="app.js"></script>
+</body>
+</html>
